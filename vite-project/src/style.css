@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  padding: 10px;
+  
+}
+
+.button {
+  @apply text-white font-semibold rounded-lg px-3 py-2 flex items-center justify-center bg-[#0BAB7C] w-[295px] 
+}
+
+/* JIT mode bg-[] */
