@@ -8,10 +8,12 @@ export default {
     extend: {
       fontFamily: {
         primary: ["Roboto", "sans-serif"],
+        head: ["Josefin Sans", "sans-serif"],
       },
       colors: {
         primary: "#5956E9",
-      }
+      },
+
     },
   },
   plugins: [],
