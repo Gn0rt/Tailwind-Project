@@ -9,7 +9,9 @@ export default {
       fontFamily: {
         primary: ["Roboto", "sans-serif"],
       },
-
+      colors: {
+        primary: "#5956E9",
+      }
     },
   },
   plugins: [],
