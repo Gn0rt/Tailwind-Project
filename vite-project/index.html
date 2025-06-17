@@ -13,10 +13,10 @@
 
 <body>
 
-  <header class="bg-[url('./src/assets/img/background.png')] w-full h-auto">
-    <div class="p-9">
+  <header class="bg-[url('./src/assets/img/background.png')] w-full h-auto bg-cover bg-center">
+    <div class="px-5 py-9 md:px-20">
       <!-- infomation -->
-      <div class="flex items-center justify-between ">
+      <div class="sm:flex items-center justify-between hidden">
         <!-- contact -->
         <div class="">
           <ul class="flex text-white">
@@ -50,8 +50,9 @@
       </div>
 
       <!-- navigation -->
-      <div class="bg-white w-full h-auto relative mt-5 rounded-lg">
-        <div class="flex items-center justify-between">
+      <div class="bg-white w-full relative mt-5 rounded-lg">
+        <div class=" hidden sm:flex items-center justify-between">
+          <!-- Desktop nav -->
           <!-- right -->
           <div>
             <ul class="flex uppercase items-center px-4 py-2">
@@ -70,41 +71,73 @@
           </div>
         </div>
 
+        <!-- Mobile -->
+        <div class="sm:hidden flex items-center justify-between p-4">
+          <!-- Logo -->
+          <div class="w-[100px] h-[40px] flex items-center">
+            <img src="./src/assets/img/Logo.png" alt="Logo" class="h-full object-contain">
+          </div>
+          <!-- Menu Button -->
+          <button id="menu-toggle" class="text-primary focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+
+
+
+
         <div
-          class="absolute top-2/4 left-2/4 translate-x-[-50%] translate-y-[-50%] shadow-md shadow-gray-500 rounded-lg">
+          class="absolute hidden sm:block top-2/4 left-2/4 translate-x-[-50%] translate-y-[-50%] shadow-md shadow-gray-500 rounded-lg">
           <div class="bg-white w-full h-[90px] rounded-lg  flex items-center px-5">
             <img src="./src/assets/img/Logo.png" alt="" class="h-5">
           </div>
         </div>
+
       </div>
 
+
+
       <!-- content -->
-      <div class="flex items-center justify-between">
-        <div class="w-[570px]">
-          <div class="bg-white p-4">
-            <h1 class="uppercase text-primary text-5xl font-bold font-head text-shadow-h1">
+      <div class="flex items-center justify-between mt-9 relative ">
+        <div class=" w-auto h-auto">
+          <div class="bg-white p-4 rounded-lg w-[570px] absolute top-[13%] z-10">
+            <h1 class="uppercase text-primary text-5xl font-bold font-head text-shadow-h1 mt-6">
               A great app makes your life better
             </h1>
-            <p>
+            <p class="text-paragraph text-base py-5 font-head">
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
               enim
               velit mollit. Exercitation veniam consequat sunt nostrud amet.
             </p>
-            <div>
-              <h3 class="uppercase">Download app now</h3>
-              <div>
-                <img src="./src/assets/img/ggplay.png" alt="Google Play">
-                <img src="./src/assets/img/appstore.png" alt="App Store">
+            <div class="mt-[30px]">
+              <h3 class="uppercase text-[25px]">Download app now</h3>
+              <div class="flex items-center mt-5">
+                <img class="w-[150px]" src="./src/assets/img/ggplay.png" alt="Google Play">
+                <img class="w-[150px]" src="./src/assets/img/appstore.png" alt="App Store">
               </div>
             </div>
           </div>
+
+          <div class="absolute top-[1%] left-[8%] z-[0]">
+            <img class="h-[500px]" src="./src/assets/img/frame.png" alt="">
+          </div>
         </div>
+
         <div>
           <img src=" ./src/assets/img/header-phone.png" alt="" class="h-[500px]">
         </div>
       </div>
 
+
+
     </div>
+
+
+
+
 
   </header>
 

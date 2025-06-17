@@ -12,6 +12,7 @@ export default {
       },
       colors: {
         primary: "#5956E9",
+        paragraph: "#6C6C72",
       },
 
     },
