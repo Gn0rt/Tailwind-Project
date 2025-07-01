@@ -9,11 +9,19 @@
     @apply font-primary text-base
   }
 }
+
 .text-shadow-h1 {
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 /* .button {
   @apply text-white font-semibold rounded-lg px-3 py-2 flex items-center justify-center bg-[#0BAB7C] w-[295px] 
 } */
 
 /* JIT mode bg-[] */
+
+@media (max-width: 640px) {
+  .inMobile {
+    margin: 20px 0 0 70px;
+  }
+}

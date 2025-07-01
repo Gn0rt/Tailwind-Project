@@ -101,10 +101,10 @@
 
 
       <!-- content -->
-      <div class="flex items-center justify-between mt-9 relative ">
+      <div class=" flex-col sm:flex-row flex items-center justify-between mt-9 relative ">
         <div class=" w-auto h-auto">
-          <div class="bg-white p-4 rounded-lg w-[570px] absolute top-[13%] z-10">
-            <h1 class="uppercase text-primary text-5xl font-bold font-head text-shadow-h1 mt-6">
+          <div class="bg-white p-4 rounded-lg sm:w-[570px] sm:absolute top-[13%] z-10">
+            <h1 class="uppercase text-primary text-3xl sm:text-5xl font-bold font-head text-shadow-h1 mt-6">
               A great app makes your life better
             </h1>
             <p class="text-paragraph text-base py-5 font-head">
@@ -121,17 +121,15 @@
             </div>
           </div>
 
-          <div class="absolute top-[1%] left-[8%] z-[0]">
+          <div class="hidden sm:block absolute top-[1%] left-[8%] z-[0]">
             <img class="h-[500px]" src="./src/assets/img/frame.png" alt="">
           </div>
         </div>
 
-        <div>
+        <div class="inMobile">
           <img src=" ./src/assets/img/header-phone.png" alt="" class="h-[500px]">
         </div>
       </div>
-
-
 
     </div>
 
