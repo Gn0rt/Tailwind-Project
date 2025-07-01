@@ -14,6 +14,16 @@
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+#about-head::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  left: -5%;
+  top: 5px;
+}
+
 /* .button {
   @apply text-white font-semibold rounded-lg px-3 py-2 flex items-center justify-center bg-[#0BAB7C] w-[295px] 
 } */
